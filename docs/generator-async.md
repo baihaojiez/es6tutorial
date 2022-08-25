@@ -62,9 +62,6 @@ Promise 对象就是为了解决这个问题而提出的。它不是新的语法
 var readFile = require('fs-readfile-promise');
 
 readFile(fileA)
-.then(function (data) {
-  console.log(data.toString());
-})
 .then(function () {
   return readFile(fileB);
 })
